@@ -27,8 +27,10 @@ public class GameTest {
 
     @Test
     public void souldWinnerPlayer2() {
-        game.register(player2);
         game.register(player3);
+        game.register(player2);
+        game.register(player1);
+        game.register(player5);
 
         int expected = 1;
         int actual = game.round(player2.name, player3.name);
@@ -38,11 +40,13 @@ public class GameTest {
 
     @Test
     public void souldWinnerPlayersEquel() {
+        game.register(player3);
+        game.register(player2);
         game.register(player1);
         game.register(player5);
 
         int expected = 0;
-        int actual = game.round(player3.name, player2.name);
+        int actual = game.round(player1.name, player5.name);
 
         Assertions.assertEquals(expected, actual);
     }
