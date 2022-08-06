@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="203937f8-0659-490a-a01f-0df67d5b2b9d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,31 +45,22 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.souldWinnerPlayer1">
-    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GameTest.souldWinnerAllPlaers">
+    <configuration name="GameTest.souldWinnerAllPlaers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lesson16" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GameTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest.souldWinnerError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lesson16" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameTest" />
-      <option name="METHOD_NAME" value="souldWinnerError" />
+      <option name="METHOD_NAME" value="souldWinnerAllPlaers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest.souldWinnerPlayer1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.souldWinnerFirstPlayerError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lesson16" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GameTest" />
-      <option name="METHOD_NAME" value="souldWinnerPlayer1" />
+      <option name="METHOD_NAME" value="souldWinnerFirstPlayerError" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,12 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameTest.souldWinnerSecindPlayerError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson16" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameTest" />
+      <option name="METHOD_NAME" value="souldWinnerSecindPlayerError" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameTest.souldWinnerPlayer1" />
+        <item itemvalue="JUnit.GameTest.souldWinnerAllPlaers" />
+        <item itemvalue="JUnit.GameTest.souldWinnerSecindPlayerError" />
+        <item itemvalue="JUnit.GameTest.souldWinnerFirstPlayerError" />
         <item itemvalue="JUnit.GameTest.souldWinnerPlayersEquel" />
-        <item itemvalue="JUnit.GameTest" />
-        <item itemvalue="JUnit.GameTest.souldWinnerError" />
         <item itemvalue="JUnit.GameTest.souldWinnerPlayer2" />
       </list>
     </recent_temporary>
