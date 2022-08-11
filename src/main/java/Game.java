@@ -9,37 +9,35 @@ public class Game {
         return playerList;
     }
 
-    public List<Integer> strenghts = new ArrayList<>();
-
     public void register(Player player) {
         playerList.add(player);
     }
 
     public int round(String playerName1, String playerName2) {
 
-        strenghts.add(-1);
-        strenghts.add(-1);
+        int player1Regisrtation = -1;
+        int player2Regisrtation = -1;
         for (int i = 0; i < playerList.size(); i++) {
-            if (playerList.get(i).name == playerName1) {
-                strenghts.set(0, playerList.get(i).getStrength());
+            if (playerList.get(i).name.equals(playerName1)) {
+                player1Regisrtation = playerList.get(i).getStrength();
             }
-            if (playerList.get(i).name == playerName2) {
-                strenghts.set(1, playerList.get(i).getStrength());
+            if (playerList.get(i).name.equals(playerName2)) {
+                player2Regisrtation = playerList.get(i).getStrength();
             }
         }
-        if (strenghts.get(0) == -1 && strenghts.get(1) == -1) {
+        if (player1Regisrtation == -1 && player2Regisrtation == -1) {
             throw new NoRegisteredExpection("Для продолжения игры необходимо зарегистрироваться обоим игрокам");
         }
-        if (strenghts.get(0) == -1 && strenghts.get(1) != -1) {
+        if (player1Regisrtation == -1 && player2Regisrtation != -1) {
             throw new NoRegisteredExpection("Для продолжения игры первому игроку необходимо зарегистрироваться");
         }
-        if (strenghts.get(0) != -1 && strenghts.get(1) == -1) {
+        if (player1Regisrtation != -1 && player2Regisrtation == -1) {
             throw new NoRegisteredExpection("Для продолжения игры второму игроку необходимо зарегистрироваться");
         }
-        if (strenghts.get(0) > strenghts.get(1)) {
+        if (player1Regisrtation > player2Regisrtation) {
             return 1;
         } else {
-            if (strenghts.get(0) < strenghts.get(1)) {
+            if (player1Regisrtation < player2Regisrtation) {
                 return 2;
             } else {
                 return 0;
